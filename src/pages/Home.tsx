@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Reveal from "../components/reveal";
 import { projects } from "../data/Projects";
 
+// TODO: Move skills to a separate data file and add icons for each skill
 const skills = [
   "TypeScript",
   "React",
@@ -21,6 +22,7 @@ const skills = [
   "Figma",
 ];
 
+// TODO: Add form validation and error handling
 export default function Home() {
   const featured = projects.slice(0, 4);
 
