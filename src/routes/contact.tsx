@@ -52,7 +52,7 @@ function ContactPage() {
               href="mailto:ashmithaa@sandiralingham@technical.com"
               className="font-display text-xl md:text-2xl font-bold tracking-tight hover:text-accent transition-colors block break-all"
             >
-              ashmithaa.sandiralingham.technical.com
+              ashmy.technical@outlook.com
             </a>
             <p className="text-sm text-muted-foreground mt-2">I will reply within 48 hours.</p>
           </div>
