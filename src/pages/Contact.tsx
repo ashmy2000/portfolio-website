@@ -140,6 +140,7 @@ export default function Contact() {
   );
 }
 
+// TODO: Extract to separate file if reused
 interface FieldProps {
   label: string;
   name: string;
@@ -147,6 +148,7 @@ interface FieldProps {
   placeholder?: string;
 }
 
+// TODO: Add validation and error handling
 function Field({ label, name, type = "text", placeholder }: FieldProps) {
   return (
     <div className="space-y-2">
