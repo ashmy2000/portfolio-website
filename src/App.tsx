@@ -4,7 +4,7 @@ import SiteNav from "./components/SiteNav";
 import SiteFooter from "./components/SiteFooter";
 
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/Profile";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
