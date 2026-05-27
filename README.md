@@ -2,11 +2,7 @@
 
 ASMI is a personal engineering portfolio and digital brand platform built to showcase software projects, technical experience, product thinking, and ongoing development work across modern web and AI-driven systems.
 
----
-## Brand Identity
-
 ASMI derives from the Sanskrit phrase “I Am” — representing identity, vision, confidence, and intentional creation.
-
 Built on the belief that ideas can be transformed into reality through technology, ASMI reflects self-belief, modern engineering, and creative technical execution.
 
 ---
