@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="px-6 pt-24 pb-24 max-w-7xl mx-auto">
+      <section className="px-5 sm:px-6 pt-16 sm:pt-24 pb-20 sm:pb-24 max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,56 +37,60 @@ export default function Home() {
             duration: 1.1,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="font-display text-6xl sm:text-8xl md:text-9xl font-extrabold tracking-tighter leading-[0.85] mb-14"
+          className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter leading-[0.9] mb-10 sm:mb-14"
         >
           ASMI
           <span className="text-[0.72em] font-light text-gray-500">.</span>
           <br />
-          <span className="block text-2xl sm:text-3xl md:text-4xl font-extralight tracking-[0.18em] text-gray-500 mt-2 leading-tight">
+          <span className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl font-extralight tracking-[0.16em] text-gray-500 mt-3 sm:mt-2 leading-tight">
             DEFINE.CREATE.BECOME.
           </span>
         </motion.h1>
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
           <Reveal delay={0.3}>
-            <p className="max-w-md text-gray-400 leading-relaxed text-lg">
+            <p className="w-full md:max-w-md text-gray-400 leading-relaxed text-base sm:text-lg">
               Transforming ideas into websites, mobile applications, and digital experiences.
             </p>
           </Reveal>
 
           <Reveal delay={0.45}>
-            <div className="flex items-center gap-3">
-              <span className="size-2.5 rounded-full bg-blue-400 animate-pulse" />
+            <div className="w-full md:w-auto flex justify-end">
+              <div className="flex items-center gap-3">
+                <span className="size-2.5 rounded-full bg-blue-400 animate-pulse" />
 
-              <span className="text-[11px] font-medium uppercase tracking-[0.22em] text-gray-500">
-                Available for collaborations
-              </span>
+                <span className="text-[10px] sm:text-[11px] font-medium uppercase tracking-[0.22em] text-gray-500">
+                  <span className="sm:hidden">Available</span>
+
+                  <span className="hidden sm:inline">Available for collaborations</span>
+                </span>
+              </div>
             </div>
           </Reveal>
         </div>
       </section>
 
       {/* SKILLS */}
-      <section className="border-y border-white/10 py-6 overflow-hidden bg-white/[0.02]">
+      <section className="border-y border-white/10 py-4 sm:py-6 overflow-hidden bg-white/[0.02]">
         <div className="flex whitespace-nowrap animate-marquee">
           {[...skills, ...skills].map((s, i) => (
-            <div key={i} className="flex items-center gap-16 px-8">
-              <span className="text-sm font-medium uppercase tracking-[0.22em] text-gray-500">
+            <div key={i} className="flex items-center gap-8 sm:gap-16 px-4 sm:px-8">
+              <span className="text-[10px] sm:text-sm font-medium uppercase tracking-[0.18em] sm:tracking-[0.22em] text-gray-500">
                 {s}
               </span>
 
-              <span className="size-1 rounded-full bg-white/20" />
+              <span className="size-[3px] sm:size-1 rounded-full bg-white/20" />
             </div>
           ))}
         </div>
       </section>
 
       {/* FEATURED WORK */}
-      <section className="px-6 py-32 max-w-7xl mx-auto">
+      <section className="px-5 sm:px-6 py-20 sm:py-32 max-w-7xl mx-auto">
         <Reveal>
-          <div className="flex items-end justify-between border-b border-white/10 pb-8 mb-16">
+          <div className="flex items-end justify-between border-b border-white/10 pb-6 sm:pb-8 mb-10 sm:mb-16">
             <div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tighter">
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter">
                 Latest Client Projects
               </h2>
             </div>
@@ -100,11 +104,11 @@ export default function Home() {
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-20">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-x-4 sm:gap-x-10 gap-y-10 sm:gap-y-20">
           {featured.map((p, i) => (
             <Reveal key={p.id} delay={i * 0.1}>
               <Link to="/portfolio" className="group block">
-                <div className="overflow-hidden rounded-2xl bg-white/[0.03] border border-white/10 mb-6">
+                <div className="overflow-hidden rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/10 mb-4 sm:mb-6">
                   <img
                     src={p.image}
                     alt={p.title}
@@ -113,16 +117,18 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="flex justify-between items-start gap-4">
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-2 sm:gap-4">
                   <div>
-                    <h3 className="font-display text-2xl font-bold tracking-tight mb-1">
+                    <h3 className="font-display text-base sm:text-2xl font-bold tracking-tight mb-1 leading-tight">
                       {p.title}
                     </h3>
 
-                    <p className="text-gray-400 text-sm max-w-md">{p.description}</p>
+                    <p className="hidden sm:block text-gray-400 text-sm max-w-md">
+                      {p.description}
+                    </p>
                   </div>
 
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 border border-white/10 px-2.5 py-1 rounded-full whitespace-nowrap">
+                  <span className="text-[8px] sm:text-[10px] uppercase tracking-[0.18em] sm:tracking-[0.2em] text-gray-500 border border-white/10 px-2 py-1 rounded-full whitespace-nowrap">
                     {p.year}
                   </span>
                 </div>
@@ -131,11 +137,12 @@ export default function Home() {
           ))}
         </div>
 
+        {/* CTA BUTTON */}
         <Reveal delay={0.2}>
-          <div className="mt-20 flex justify-center">
+          <div className="mt-14 sm:mt-20 flex justify-center">
             <Link
               to="/portfolio"
-              className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full border border-white/10 bg-white/[0.03] text-sm font-medium uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-colors"
+              className="group relative inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 rounded-full border border-white/10 bg-white/[0.03] text-[10px] sm:text-sm font-medium uppercase tracking-[0.18em] sm:tracking-[0.2em] hover:bg-white hover:text-black transition-colors"
             >
               Browse full portfolio
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -144,17 +151,17 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* CTA */}
-      <section className="px-6 pb-32 max-w-7xl mx-auto">
+      {/* CTA to take to the portfolio */}
+      <section className="px-5 sm:px-6 pb-20 sm:pb-32 max-w-7xl mx-auto">
         <Reveal>
-          <div className="bg-white/[0.03] border border-white/10 rounded-3xl px-8 py-20 md:p-24 text-center relative overflow-hidden">
+          <div className="bg-white/[0.03] border border-white/10 rounded-2xl sm:rounded-3xl px-6 sm:px-8 py-14 sm:py-20 md:p-24 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-blue-500/5 pointer-events-none" />
 
-            <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-gray-500 mb-8">
+            <p className="text-[9px] sm:text-[10px] font-medium uppercase tracking-[0.24em] sm:tracking-[0.3em] text-gray-500 mb-6 sm:mb-8">
               ⏤ Let's collaborate
             </p>
 
-            <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tighter mb-10">
+            <h2 className="font-display text-3xl sm:text-5xl md:text-7xl font-bold tracking-tighter leading-[1] mb-8 sm:mb-10">
               Have a project
               <br />
               in motion?
@@ -162,7 +169,7 @@ export default function Home() {
 
             <Link
               to="/contact"
-              className="relative inline-flex items-center gap-3 bg-white text-black px-10 py-5 rounded-full font-medium text-sm uppercase tracking-[0.2em] hover:bg-blue-400 transition-colors"
+              className="relative inline-flex items-center gap-2 sm:gap-3 bg-white text-black px-6 sm:px-10 py-3 sm:py-5 rounded-full font-medium text-[10px] sm:text-sm uppercase tracking-[0.18em] sm:tracking-[0.2em] hover:bg-blue-400 transition-colors"
             >
               Start a conversation
               <span>→</span>
