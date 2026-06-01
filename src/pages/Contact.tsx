@@ -84,13 +84,11 @@ export default function Contact() {
               <div className="flex items-center gap-3">
                 <span className="size-2.5 rounded-full bg-blue-400 animate-pulse" />
 
-                <span className="text-xs sm:text-sm uppercase tracking-[0.12em]">
-                  Available for selected opportunities
-                </span>
+                <span className="text-xs sm:text-sm uppercase tracking-[0.12em]">Available</span>
               </div>
 
               <span className="pl-[22px] text-[10px] sm:text-xs text-gray-500 uppercase tracking-[0.08em]">
-                British & German Citizen
+                for selected opportunities
               </span>
             </div>
           </div>
