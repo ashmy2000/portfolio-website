@@ -42,7 +42,7 @@ export default function Contact() {
               href="mailto:ashmytechnical@outlook.com"
               className="font-display text-lg sm:text-xl md:text-2xl font-bold tracking-tight hover:text-blue-400 transition-colors block break-all"
             >
-              ashmytechnical@outlook.com
+              ashmy.technical@outlook.com
             </a>
 
             <p className="text-sm text-gray-400 mt-2">I will reply within 48 hours.</p>
