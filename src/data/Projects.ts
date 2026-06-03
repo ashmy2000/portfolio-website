@@ -33,7 +33,7 @@ export const projects: Project[] = [
     description:
       "AI fashion assistant that helps users discover and visualise outfit ideas by generating personalised clothing recommendations for any style, occasion, or gender.",
     category: "websites",
-    year: "2024",
+    year: "2026",
     client: "In Development",
     image: p4,
   },
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     description:
       "Fitness coaching platform where trainers can sell workout programs, upload training videos, manage memberships, and connect directly with clients for personalised coaching.",
     category: "other",
-    year: "2023",
+    year: "2026",
     client: "In Development",
     image: p6,
   },
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     description:
       "Premium tea discovery platform showcasing authentic handcrafted teas, brewing guides, flavour profiles, and online ordering.",
     category: "android",
-    year: "2024",
+    year: "2026",
     client: "In Development",
     image: p5,
   },
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description:
       "Social reading platform that helps users track books, monitor reading progress, share notes, connect with readers, and engage directly with authors.",
     category: "ios",
-    year: "2024",
+    year: "2026",
     client: "In Development",
     image: p3,
   },
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     description:
       "Business management platform for inventory tracking, stock control, sales monitoring, and automated invoice generation for customers.",
     category: "websites",
-    year: "2025",
+    year: "2026",
     client: "In Development",
     image: p2,
   },
