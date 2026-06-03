@@ -121,7 +121,9 @@ export default function Contact() {
                 name="message"
                 rows={5}
                 required
-                placeholder="Tell me what you'd like to build, the purpose of the project, your timeline, and any references."
+                placeholder={`Software Development Service: Tell me what you'd like to build, the purpose of the project, your timeline, and any references.
+
+Translation Service: Tell me what you need translated such as paperwork, HMRC letters, NHS appointments, telephone conversations, video calls, or in-person interpretation.`}
                 className="w-full bg-transparent border-b border-white/10 py-3 text-sm placeholder:text-gray-500/50 focus:outline-none focus:border-blue-400 transition-colors resize-none"
               />
             </div>

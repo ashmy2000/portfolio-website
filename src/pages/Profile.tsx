@@ -6,25 +6,23 @@ const experience = [
   {
     role: "Software Engineer - Publicis Sapient",
     company: "Also worked as Scrum Master, Defect Manager, Tech Lead.",
-    period: "2022 — Present",
+    period: "September 2022 — Present",
     description:
       "Developed React-based UI components enabling non-technical users to design and manage AI agent workflows. Contributed to AI workflow architecture discussions and backend integrations for scalable automation systems.",
   },
-
-  {
-    role: "Computer Science Teacher Intern ",
-    company: "St Joseph’s College",
-    period: "Jun 2022 – Jul 2022",
-    description:
-      "Supported Year 6 GCSE students in developing core computing knowledge and problem-solving skills. Independently planned and delivered lessons, improving classroom engagement and helping students build confidence in computer science concepts",
-  },
-
   {
     role: "Freelance Interpreter  ",
     company: "ClearVoice",
-    period: "(Janaury 2025 – Present",
+    period: "January 2025 – Present",
     description:
       "Provide professional Tamil ↔ English interpretation and translation services across legal, medical, financial, and technical sectors. Facilitate accurate communication between clients and service providers, ensuring clarity, cultural understanding, and confidentiality.",
+  },
+  {
+    role: "Computer Science Teacher Intern ",
+    company: "St Joseph’s College",
+    period: "June 2022 – July 2022",
+    description:
+      "Supported Year 6 GCSE students in developing core computing knowledge and problem-solving skills. Independently planned and delivered lessons, improving classroom engagement and helping students build confidence in computer science concepts",
   },
 ];
 
