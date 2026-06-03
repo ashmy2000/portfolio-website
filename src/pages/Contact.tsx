@@ -42,7 +42,7 @@ export default function Contact() {
               href="mailto:ashmytechnical@outlook.com"
               className="font-display text-lg sm:text-xl md:text-2xl font-bold tracking-tight hover:text-blue-400 transition-colors block break-all"
             >
-              ashmytechnical@outlook.com
+              ashmy.technical@outlook.com
             </a>
 
             <p className="text-sm text-gray-400 mt-2">I will reply within 48 hours.</p>
@@ -88,7 +88,7 @@ export default function Contact() {
               </div>
 
               <span className="pl-[22px] text-[10px] sm:text-xs text-gray-500 uppercase tracking-[0.08em]">
-                for selected opportunities
+                for selected projects.
               </span>
             </div>
           </div>
@@ -111,8 +111,6 @@ export default function Contact() {
               name="company"
               placeholder="Personal brand, startup, business, etc."
             />
-
-            <Field label="Budget" name="budget" placeholder="Rough range, e.g. £2k-£10k" />
 
             <div className="space-y-2">
               <label className="text-[10px] uppercase tracking-[0.22em] text-gray-500 font-medium">
